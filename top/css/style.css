@@ -5,22 +5,35 @@ html{
 body{
   margin: 0;
   height: 100%;
+  background-color: #F7F7F6;
 }
 .kikuya h1{
   font-family: 'New Tegomin', serif;
   font-family: 'Shippori Mincho B1', serif;
-  font-size: 40px;
-  color: black;
-  padding-top: 10px;
+  font-size: 37px;
+  color: #444424;
+  position: relative;
+  left: 100px;
+  bottom: 10px;
+}
+.kikuya h2{
+  font-family: 'New Tegomin', serif;
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 20px;
+  color: #444424;
+  position: relative;
+  bottom: 69px;
+  left: 290px;
 }
 .kikuya{
   margin: 0;
   text-align: center;
 }
-
 header{
-  background-color: #8FBC8F;
-  margin-top: 10px;
+  height: 80px;
+  display: flex;
+  background-color: #fff;
+  border-bottom: 13px solid #B2B2A5;
 }
 ul{
   display: flex;
@@ -29,40 +42,43 @@ ul{
   margin-left: auto;
   margin-right: auto;
   padding: 0;
+  position: relative;
+  top: 20px;
+  left: 900px;
 }
 li{
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 10px;
+  border-left: 3px solid #77776F;
 }
 li a{
-  color: black;
+  color: #444424;
   text-decoration: none;
-  border: 1px solid gray;
-  background-color: #fff;
-  padding: 4px;
+  padding: 7px;
+
 }
-.mainVisual{
-    background-image: url(../img/IMG_5692.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 800px;
-    height: 500px;
-    color: #fff;
-    margin-bottom: 20px;
-    margin-left: 50px;
-}
-.container_range{
+.main{
   position: relative;
-  top: 150px;
+}
+.mainVisual img{
+  position: relative;
+  bottom: 486px;
+  border-radius: 0px 0px 90px 0px;
+}
+.container_range img{
+  position: relative;
+  top: 100px;
   left: 600px;
+  border-radius: 0px 90px 0px 40px;
 }
-.container__inner{
+/* .container__inner{
   background-color: rgba(000, 000, 000, 0.6);
-  max-width: 650px;
+  max-width: 500px;
   padding: 20px;
-}
+  position: relative;
+  left: 200px;
+} */
 
 .content{
   text-align: center;
