@@ -4,7 +4,6 @@ html{
 }
 body{
   margin: 0;
-  height: 100%;
   background-color: #fff;
   overflow-x: hidden;
 }
@@ -16,75 +15,194 @@ header{
   background-size: cover;
 }
 .kikuya{
-  position: relative;
-  left: 300px;
-  top: 100px;
   display: flex;
+  margin: 10px;
+  height: 70px;
+  position: relative;
+  left: 200px;
+  top: 20px;
 }
 .kikuya h1{
   font-family: 'New Tegomin', serif;
-  font-family: 'Shippori Mincho B1', serif;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
   font-size: 37px;
-  color: #444;
-  margin-right: 20px;
+  margin: 10px;
+  color: #79674E;
 }
 .kikuya h2{
   font-family: 'New Tegomin', serif;
-  font-family: 'Shippori Mincho B1', serif;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
   font-size: 20px;
-  color: #444;
+  color: #79674E;
+  margin: 10px;
   position: relative;
-  top: 20px;
+  top: 15px;
+
 }
 ul{
   display: flex;
   list-style: none;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
   position: relative;
-  top: 20px;
-  left: 900px;
+  top: 32px;
+  left: 500px;
+  padding: 0;
 }
 li{
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  border-left: 3px solid #444;
+  border-left: 3px solid #79674E;
+  margin: 10px;
 }
 li a{
-  color: #444;
+  color: #79674E;
   text-decoration: none;
   padding: 7px;
 }
-map iframe{
+
+/* メイン */
+.mainVisual{
+  display: flex;
   position: relative;
-  left: 500px;
+  left: 180px;
+  margin-bottom: 200px;
+}
+.mainImg img{
+  margin: 50px;
+}
+.mainAi img{
+  margin: 50px;
+  position: relative;
+  top: 120px;
 }
 .title1 h1{
   font-size: 30px;
   font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',
   sans-serif;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 30px;
+  color: #79674E;
+}
+.text{
+  margin: 10px;
 }
 .text p{
   font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
   font-size: 20px;
   position:  relative;
-  top: 100px;
+  top: 200px;
+  color: #79674E;
 }
-.text{
-  margin: 100px;
+.text a{
+  color: #fff;
+  position: relative;
+  top: 200px;
+  text-decoration: none;
+  background-color: #C5C3C3;
+  padding: 10px;
 }
 .map img{
-  margin-left: 100px;
-  margin-top: 50px;
+  margin: 80px;
   position: relative;
   text-align: center;
 }
 .acsess{
   display: flex;
+}
+.text2 {
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
+  font-size: 20px;
+  position:  relative;
+  top: 60px;
+  color: #79674E;
+  text-align: center;
+  line-height: 40px;
+  margin: 10px;
+}
+.about {
+  margin-bottom: 200px;
+}
+.sec1{
+  background-color: #E6E1E5;
+  width: 100%;
+  height: 450px;
+  padding: 30px;
+  margin-bottom: 100px;
+}
+.sec2{
+  background-color: #fff;
+  width: 100%;
+  height: 700px;
+  padding: 30px;
+  margin-bottom: 100px;
+}
+/* ボタン全体 */
+.flowbtn11{
+font-family:'Verdana',sans-serif;
+border-radius:4px;
+position:relative;
+display:inline-block;
+width:90%;
+font-size:20px;
+color:#fff!important;
+text-decoration:none;
+margin-bottom:5px;
+}
+/* Twitter */
+.fl_tw1{
+background:#55acee;
+}
+/* Instagramアイコン位置 */
+.insta_btn11 .fa-instagram{
+position:relative;
+z-index:1;
+}
+/* Instagram紫グラデ背景色 */
+.insta_btn11{
+background:-webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+background:linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+overflow:hidden;
+}
+/* Instagramオレンジグラデ背景色 */
+.insta_btn11:before{
+content: '';
+position:absolute;
+top:17px;
+left:-75px;
+width:100%;
+height:100%;
+background:-webkit-radial-gradient(#ffdb2c 5%, rgba(255, 105, 34, 0.65) 45%, rgba(255, 88, 96, 0) 80%);
+background:radial-gradient(#ffdb2c 5%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 80%);
+}
+/* お問い合わせメール */
+.fl_ma1{
+background:#f3981d;
+}
+/* アイコンボタンホバー時 */
+.flowbtn11:hover span{
+-webkit-transform: rotateX(360deg);
+-ms-transform: rotateX(360deg);
+transform: rotateX(360deg);
+text-decoration:none;
+}
+/* ボタン内テキスト調整 */
+.flowbtn11 span{
+font-size:14px;
+position:relative;
+left:8px;
+bottom:2px;
+transition:.6s;
+display:inline-block;
+}
+/* ulタグの内側余白を０にする */
+ul.snsbtniti2{
+padding:0!important;
+}
+/* アイコンボタンの位置調整 */
+.snsbtniti2{
+display:flex;
+flex-flow:row wrap;
+}
+/* アイコンボタン同士の余白調整 */
+.snsbtniti2 li{
+flex:0 0 48%;
+text-align:center!important;
 }
