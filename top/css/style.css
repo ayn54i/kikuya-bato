@@ -9,9 +9,9 @@ body{
 }
 header{
   width: 100%;
-  height: 200px;
+  height: 120px;
   display: flex;
-  background-color: #fff;
+  background-color: #F4F2F3;
   background-size: cover;
 }
 .kikuya{
@@ -48,7 +48,7 @@ ul{
   left: 500px;
   padding: 0;
 }
-li{
+.main-nav__item{
   border-left: 3px solid #79674E;
   margin: 10px;
 }
@@ -63,7 +63,8 @@ li a{
   display: flex;
   position: relative;
   left: 180px;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .mainImg img{
   margin: 50px;
@@ -102,10 +103,13 @@ li a{
 .map img{
   margin: 80px;
   position: relative;
-  text-align: center;
+
 }
 .acsess{
   display: flex;
+  position: relative;
+  left: 80px;
+  bottom: 30px;
 }
 .text2 {
   font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
@@ -116,12 +120,13 @@ li a{
   text-align: center;
   line-height: 40px;
   margin: 10px;
+  margin-bottom: 70px;
 }
 .about {
   margin-bottom: 200px;
 }
 .sec1{
-  background-color: #E6E1E5;
+  background-color: #F4F2F3;
   width: 100%;
   height: 450px;
   padding: 30px;
@@ -132,19 +137,29 @@ li a{
   width: 100%;
   height: 700px;
   padding: 30px;
-  margin-bottom: 100px;
+  /* margin-bottom: 50px; */
+}
+.sec3{
+  background-color: #F4F2F3;
+  width: 100%;
+  height: 400px;
+  padding: 30px;
 }
 /* ボタン全体 */
 .flowbtn11{
 font-family:'Verdana',sans-serif;
 border-radius:4px;
 position:relative;
+/* position: relative; */
+right: 500px;
 display:inline-block;
-width:90%;
+width: 100px;
 font-size:20px;
 color:#fff!important;
 text-decoration:none;
-margin-bottom:5px;
+/* margin-bottom:5px; */
+margin: 25px;
+/* margin-left: 25px; */
 }
 /* Twitter */
 .fl_tw1{
@@ -187,8 +202,9 @@ text-decoration:none;
 .flowbtn11 span{
 font-size:14px;
 position:relative;
-left:8px;
 bottom:2px;
+left: 15px;
+text-align: center;
 transition:.6s;
 display:inline-block;
 }
@@ -200,9 +216,17 @@ padding:0!important;
 .snsbtniti2{
 display:flex;
 flex-flow:row wrap;
+/* text-align: center; */
+
 }
 /* アイコンボタン同士の余白調整 */
 .snsbtniti2 li{
-flex:0 0 48%;
-text-align:center!important;
+/* flex:0 0 48%; */
+/* text-align:center!important; */
+}
+footer{
+  height: 50px;
+  text-align: center;
+  padding: 30px;
+  color: #79674E;
 }
