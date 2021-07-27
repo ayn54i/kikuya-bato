@@ -1,3 +1,4 @@
+/* 全体 */
 html{
   height: 100%;
   margin: 0;
@@ -7,6 +8,8 @@ body{
   background-color: #fff;
   overflow-x: hidden;
 }
+
+/* ヘッダー */
 header{
   width: 100%;
   height: 120px;
@@ -38,24 +41,7 @@ header{
   position: relative;
   top: 15px;
 }
-ul{
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  position: relative;
-  top: 32px;
-  left: 500px;
-  padding: 0;
-}
-.main-nav__item{
-  border-left: 3px solid #79674E;
-  margin: 10px;
-}
-li a{
-  color: #79674E;
-  text-decoration: none;
-  padding: 7px;
-}
+
 /* メイン */
 .mainVisual{
   text-align: center;
@@ -64,6 +50,15 @@ li a{
   width: 90%;
   margin: 50px;
 }
+
+/* お店について */
+.area{
+  background-color: #F4F2F3;
+  width: 100%;
+  height: 670px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .title1 h1{
   font-size: 30px;
   font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',
@@ -71,6 +66,48 @@ li a{
   text-align: center;
   margin: 30px;
   color: #79674E;
+}
+.about {
+  margin-bottom: 200px;
+}
+.text2 {
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
+  font-size: 20px;
+  position:  relative;
+  top: 30px;
+  color: #79674E;
+  text-align: center;
+  line-height: 40px;
+  margin: 10px;
+}
+.tennaiImg{
+  position: relative;
+  top: 80px;
+  text-align: center;
+}
+.tennaiImg img{
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 15px solid #fff;
+}
+
+/* アクセス */
+.area2{
+  background-color: #fff;
+  width: 100%;
+  height: 670px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.acsess{
+  display: flex;
+  position: relative;
+  left: 20px;
+  bottom: 30px;
+}
+.map img{
+  margin: 80px;
+  position: relative;
 }
 .text{
   margin: 10px;
@@ -89,33 +126,11 @@ li a{
   left: 130px;
   text-decoration: underline;
 }
-.about {
-  margin-bottom: 200px;
-}
-.tennaiImg{
-  position: relative;
-  top: 80px;
-  text-align: center;
-}
-.tennaiImg img{
-  margin-left: 20px;
-  margin-right: 20px;
-  border: 15px solid #fff;
-}
-.acsess{
-  display: flex;
-  position: relative;
-  left: 20px;
-  bottom: 30px;
-}
-.map img{
-  margin: 80px;
-  position: relative;
-}
 .acsessInfo{
   position: relative;
-  bottom: 320px;
-  left: 845px;
+  bottom: 0px;
+  top: 180px;
+  left: 5px;
   font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
   color: #79674E;
 }
@@ -128,42 +143,8 @@ li a{
   position: relative;
   left: 30px;
 }
-.snsQr{
-  position: relative;
-  text-align: center;
-}
-.snsQr img{
-  margin: 20px;
-}
-.snsQr p{
-  color: #79674E;
-  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
-  margin: 0;
-}
-.text2 {
-  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
-  font-size: 20px;
-  position:  relative;
-  top: 30px;
-  color: #79674E;
-  text-align: center;
-  line-height: 40px;
-  margin: 10px;
-}
-.area{
-  background-color: #F4F2F3;
-  width: 100%;
-  height: 670px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.area2{
-  background-color: #fff;
-  width: 100%;
-  height: 670px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+
+/*リンク */
 .area3{
   background-color: #F4F2F3;
   width: 100%;
@@ -171,56 +152,18 @@ li a{
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* ボタン全体 */
-.flowbtn10{
-  font-family:'Verdana',sans-serif;
-  border-radius:4px;
-  display:inline-block;
-  font-size:35px;
-  text-decoration:none;
-  margin: 30px;
-  transition:.5s;
-  color:#444;
-
+.snsQr{
+  position: relative;
+  text-align: center;
+  top: 50px;
 }
-
-/* ボタン全体 */
-.flowbtn9{
-display:inline-block;
-font-size:40px;
-text-decoration:none;
-transition:.5s;
-position: relative;
-right: 200px;
+.snsQr p{
+  color: #79674E;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
+  margin: 0;
 }
-/* Twitter */
-.flowbtn9 .fa-twitter-square{
-color:#55acee;
-}
-/* Instagram */
-.flowbtn9 .fa-instagram{
-color:#c6529a;
-}
-/* ulタグの内側余白を０にする */
-ul.snsbtniti{
-padding:0!important;
-}
-/* アイコン全体の位置 */
-.snsbtniti{
-display:flex;
-flex-flow:row wrap;
-justify-content:space-between;
-}
-/* アイコン同士の余白 */
-.snsbtniti li{
-flex:0 0 33%;
-text-align:center!important;
-}
-/* アイコンにマウスを乗せた時 */
-.flowbtn9:hover{
--webkit-transform: translateY(-5px);
--ms-transform: translateY(-5px);
-transform: translateY(-5px);
+.snsQr img{
+  margin: 20px;
 }
 
 /* フッター */
@@ -230,7 +173,8 @@ footer{
   padding: 30px;
   color: #79674E;
 }
-/* タブレットレスポンシブ */
+
+/* タブレット */
 @media screen and (max-width: 959px)  {
 
   header{
@@ -261,6 +205,45 @@ footer{
     position: relative;
     top: 10px;
   }
+  .follow-me {
+    list-style: none;
+    margin: 0 0 -8px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    left: 0px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 2px #5E5D61;
+  }
+  .follow-me li {
+    text-align: center;
+    float: left;
+    margin: 0 10px 10px 0;
+    padding: 0;
+  }
+  .follow-me li a::before {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 16px;
+    height: 44px; /* Button height */
+    line-height: 44px; /* Button height */
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    text-align: center;
+    width: 44px; /* Button width */
+  }
+  .follow-me li a:hover::before {
+    opacity: 0.7;
+  }
+  .follow-me li a[href*="twitter.com"]::before{
+    background-color: #5C84CD; content: "\f099";
+  }
+  .follow-me li a[href*="instagram.com"]::before{
+    background-color: #C35394; content: "\f16d";
+  }
   .mainVisual{
     text-align: center;
   }
@@ -268,17 +251,150 @@ footer{
     width: 90%;
     margin: 30px;
   }
+  /* お店について */
+  .area{
+    background-color: #F4F2F3;
+    width: 100%;
+    height: 280px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .title1 h1{
+    font-size: 25px;
+    font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',
+    sans-serif;
+    text-align: center;
+    margin: 10px;
+    color: #79674E;
+  }
+  .about {
+    margin:0px;
+  }
+  .text2 {
+    font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
+    font-size: 14px;
+    position:  relative;
+    top: 30px;
+    color: #79674E;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px;
+  }
+  .tennaiImg{
+    display: none;
+  }
+  .tennaiImg img{
+    display: none;
+  }
 
+  /* アクセス */
+  .area2{
+    background-color: #fff;
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .acsess{
+    display: flex;
+    position: relative;
+    left: 0px;
+    bottom: 30px;
+    top: 20px;
+  }
+  .map{
+    position: relative;
+    top: 20px;
+  }
+  .map img{
+    width: 350px;
+    margin: 20px;
+    position: relative;
+  }
+  .textBox{
+    position: relative;
+    top: 40px;
+  }
+  .text p {
+    font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
+    font-size: 14px;
+    position:  relative;
+    top: 0px;
+    left: 0px;
+    color: #79674E;
+    text-align: left;
+    line-height: 25px;
+    margin: 15px;
+  }
+  .text a{
+    color: #79674E;
+    position: relative;
+    top: 0px;
+    bottom: 10px;
+    font-size: 12px;
+    text-align: left;
+    left: 80px;
+    text-decoration: underline;
+  }
+  .acsessInfo{
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    top: 40px;
+    font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
+    color: #79674E;
+    font-size: 11px;
+    text-align:left;
+    margin: 15px;
+    width: 270px;
+  }
+  .acsessInfo h1{
+    font-size: 12px;
+  }
+  .acsessInfo a{
+    color: #79674E;
+    text-decoration: underline;
+    position: relative;
+    left: 30px;
+  }
+  /* リンク */
+  .area3{
+    background-color: #F4F2F3;
+    width: 100%;
+    height: 450px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .text2{
+    position: relative;
+    top: 50px;
+  }
+  .snsQr{
+    position: relative;
+    top: 50px;
+  }
+  .snsQr img{
+    margin: 20px;
+    width: 100px;
+  }
+  .snsQr p{
+    color: #79674E;
+    font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
+    font-size: 12px;
+    margin: 0;
+  }
+  footer{
+    font-size: 15px;
+  }
 }
 
-/* iphoneレスポンシブ */
+/* SP */
 @media screen and (max-width: 480px){
 
   /* 全体 */
   body{
     margin: 0:
   }
-
   /* ヘッダー */
   header{
     height: 80px;
@@ -345,7 +461,7 @@ footer{
     margin: 10px;
   }
   .tennaiImg{
-  display: none;
+    display: none;
   }
   .tennaiImg img{
     display: none;
@@ -355,7 +471,7 @@ footer{
   .area2{
     background-color: #fff;
     width: 100%;
-    height: 660px;
+    height: 730px;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -392,18 +508,13 @@ footer{
     text-align: left;
     left: 200px;
     text-decoration: underline;
-
   }
   .acsessInfo{
-    position: relative;
-    bottom: 0px;
-    left: 0px;
-    top: 60px;
     font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
     color: #79674E;
     font-size: 11px;
     text-align:left;
-    margin: 15px;
+    width: 360px;
   }
   .acsessInfo h1{
     font-size: 12px;
@@ -414,14 +525,15 @@ footer{
     position: relative;
     left: 30px;
   }
+
+  /* リンク */
   .area3{
     background-color: #F4F2F3;
     width: 100%;
-    height: 600px;
+    height: 450px;
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
   .snsQr img{
     margin: 20px;
     width: 100px;
@@ -431,5 +543,8 @@ footer{
     font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
     font-size: 12px;
     margin: 0;
+  }
+  footer{
+    font-size: 13px;
   }
 }
