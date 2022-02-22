@@ -11,78 +11,16 @@ body{
 
 /* ヘッダー */
 header{
-  width: 100%;
-  height: 80px;
-  display: flex;
-  background-color: #fff;
-  background-size: cover;
+  display: none;
 }
 .kikuya{
-  display: flex;
-  margin: 10px;
-  height: 70px;
-  position: relative;
-  left: 200px;
-  top: 5px;
+  display: none;
 }
-.kikuya h1{
-  font-family: 'New Tegomin', serif;
-  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
-  font-size: 30px;
-  margin: 10px;
-  color: #79674E;
-}
-.kikuya h2{
-  font-family: 'New Tegomin', serif;
-  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
-  font-size: 20px;
-  color: #79674E;
-  margin: 10px;
-  position: relative;
-  top: 10px;
-}
-
 /* SNSボタン */
-.follow-me {
-  list-style: none;
-  margin: 0 0 -15px;
-  overflow: hidden;
-  padding: 0;
-  height: 70px;
+header img {
+  margin-left: 10px;
+  margin-right: 10px;
   position: relative;
-  top: 5px;
-  left: 600px;
-}
-.follow-me li {
-  list-style: none;
-  float: left;
-  margin: 20px;
-  padding: 0;
-}
-.follow-me li a::before {
-  -webkit-border-radius: 2px;
-  border-radius: 50%;
-  color: #79674E;
-  display: inline-block;
-  font-family: FontAwesome;
-  font-size: 40px;
-  height: 44px; /* Button height */
-  line-height: 44px; /* Button height */
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  text-align: center;
-  width: 44px; /* Button width */
-}
-.follow-me li a:hover::before {
-  opacity: 0.7;
-}
-.follow-me li a[href*="instagram.com"]::before {
-  background-color: #F4F2F3;
-  content: "\f16d";
-}
-.follow-me li a[href*="twitter.com"]::before {
-  background-color: #F4F2F3;
-  content: "\f099";
 }
 
 /* メイン */
@@ -102,36 +40,80 @@ header{
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.title1 {
+  text-align: center;
+  color: #363431;
+}
 .title1 h1{
-  font-size: 30px;
-  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',
+  font-size: 23px;
+  font-family: 'TsukuARdGothic-Regular', sans-serif;
   sans-serif;
   text-align: center;
-  margin: 30px;
-  color: #79674E;
+  margin: 10px;
+  color: #363431;
+}
+.title1 p {
+  font-size: 12px;
 }
 .about {
-  margin-bottom: 200px;
-}
-.text2 {
-  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
-  font-size: 20px;
-  position:  relative;
-  top: 30px;
-  color: #79674E;
-  text-align: center;
-  line-height: 40px;
-  margin: 10px;
-}
-.tennaiImg{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   top: 80px;
-  text-align: center;
+  height: 400px;
+}
+.text2 {
+  font-family: 'TsukuARdGothic-Regular',   sans-serif;
+  position:  relative;
+  top: 0px;
+  left: 0px;
+  color: #363431;
+  text-align: left;
+  line-height: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+  background-color: #DED8CB;
+  width: 600px;
+}
+.text2 p {
+  font-size: 14px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  width: 410px;
+  padding: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-top: 2px #79674E dotted;
+  border-bottom: 2px #79674E dotted;
 }
 .tennaiImg img{
-  margin-left: 20px;
-  margin-right: 20px;
-  border: 15px solid #fff;
+  width: 500px;
+  height: 400px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+.text2:before {
+  height: 0;
+  display: block;
+  position: absolute;
+  right: -3px;
+  content: "";
+  border-top: solid 100px #F4F2F3;
+  border-left: solid 100px transparent;
+  top: -3px;
+  z-index: 2;
+}
+.text2:after {
+  height: 0;
+  display: block;
+  position: absolute;
+  right: -2px;
+  content: "";
+  border-top: solid 100px transparent;
+  border-left: solid 100px transparent;
+  top: -2px;
 }
 
 /* アクセス */
@@ -156,8 +138,8 @@ header{
   margin: 10px;
 }
 .text p{
-  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
-  font-size: 20px;
+  font-family: 'TsukuARdGothic-Regular', sans-serif;
+  font-size: 15px;
   position:  relative;
   top: 100px;
   color: #79674E;
@@ -168,47 +150,61 @@ header{
   top: 120px;
   left: 130px;
   text-decoration: underline;
+  font-size: 13px;
 }
 .acsessInfo{
   position: relative;
   bottom: 0px;
   top: 180px;
   left: 5px;
-  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
+  font-family: 'TsukuARdGothic-Regular', sans-serif;
   color: #79674E;
 }
 .acsessInfo h1{
-  font-size: 20px;
+  font-size: 18px;
 }
 .acsessInfo a{
   color: #79674E;
   text-decoration: underline;
   position: relative;
   left: 30px;
+  font-size: 13px;
+}
+.acsessInfo p {
+  font-size: 15px;
+
 }
 
 /*リンク */
 .area3{
   background-color: #F4F2F3;
   width: 100%;
-  height: 350px;
+  height: 500px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* .snsQr{
-  position: relative;
-  text-align: center;
-  top: 50px;
+.area3 ul {
+  border-bottom: solid 1px #777;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding: 0;
+  width: 900px;
 }
-.snsQr p{
-  color: #79674E;
-  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',  sans-serif;
-  margin: 0;
+.area3 li {
+  font-size: 15px;
+  border-top: solid 1px #777;
+  padding: 20px;
+  text-align: left;
+  list-style: none;
 }
-.snsQr img{
-  margin: 20px;
-} */
-
+.area3 a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 30px;
+  font-size: 13px;
+}
 /* フッター */
 footer{
   height: 50px;
