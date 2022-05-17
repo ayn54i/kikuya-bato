@@ -11,7 +11,7 @@ body{
 
 /* ヘッダー */
 header{
-  display: none;
+display: none;
 }
 .kikuya{
   display: none;
@@ -32,6 +32,40 @@ header img {
   margin: 0px;
 }
 
+.form {
+  height: 500px;
+  text-align: center;
+  padding-top: 50px;
+
+}
+.form-intext {
+  width: 510px;
+  margin: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #79674E;
+}
+input{
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 3px;
+  width: 500px;
+  height:30px;
+}
+.smbtn {
+  width: 200px;
+  margin-top: 30px;
+  background-color: #DED8CB;
+  border-color: #79674E;
+  font-size: 13px;
+}
+label {
+  margin: 5px;
+  font-size: 13px;
+  position: relative;
+  right: 200px;
+  text-align: left;
+}
 /* お店について */
 .area{
   background-color: #F4F2F3;
@@ -205,10 +239,75 @@ header img {
 }
 /* フッター */
 footer{
-  height: 50px;
+  height: 300px;
   text-align: center;
   padding: 30px;
   color: #79674E;
+}
+footer p {
+  position: relative;
+  top: 100px;
+}
+/* ボタン全体の装飾 */
+.flowbtn4{
+font-family:'Trebuchet MS',sans-serif;/* 好きなフォントに変えてね */
+border-radius:10%;
+display:inline-block;
+width:150px;
+height:50px;
+font-size:30px;
+transition:.5s;
+text-decoration:none;
+}
+/* ボタンマウスホバー時テキストカラー */
+.flowbtn4:hover{
+color:#79674E!important;
+}
+/* Twitter */
+.flowbtn4.fl_tw2{
+border:solid 1px #79674E;
+color:#79674E;
+}
+/* Twitterマウスホバー時 */
+.flowbtn4.fl_tw2:hover{
+border:solid 1px #79674E;
+background:#D2D3BA;
+}
+/* Instagram */
+.flowbtn4.insta_btn2 {
+border:solid 1px #79674E;
+color:#79674E;
+}
+/* Instagramマウスホバー時 */
+.flowbtn4.insta_btn2:hover{
+border:solid 1px #79674E;
+background:#D2D3BA;
+}
+/* ボタン内テキスト調整 */
+.flowbtn4 div{
+font-size:14px;
+font-weight:bold;
+position:relative;
+top: 20px;
+}
+/* ulタグの内側余白を０にする */
+.snsbtniti{
+  padding: 10px;
+  text-align: center;
+  width: 344px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+/* ボタンの位置 */
+
+.snsbtniti{
+display:flex;
+}
+/* ボタン同士の余白 */
+.snsbtniti li{
+list-style: none;
+margin: 10px;
 }
 
 @media screen and (max-width: 1120px)  {
